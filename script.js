@@ -1,6 +1,7 @@
 const calculate = document.getElementById('calcolatore');
+const results = document.getElementById('results')
 
-calculate.addEventListener('click',(e) => {
+calculate.addEventListener('click', (e) => {
   e.preventDefault();
 
 
@@ -13,14 +14,14 @@ calculate.addEventListener('click',(e) => {
   let finalprice;
 
 
-  if(age <18){
+  if(age === 'under-18' ){
     finalprice = baseprice * 0.8;
   }
-  else if (age > 65) {
-    finalprice = baseprice * 0.6;
+  else if (age === 'over-65' ) {
+    finalprice = baseprice * 0.6 
   }
   else{
     finalprice = baseprice
   }
-  results.innertext = `km percorsi: ${km}, età del passeggero: ${età}, prezzo finale: ${finalprrice.tofixed(2)}` 
+  results.innertext = `km percorsi: ${km}, età del passeggero: ${età}, prezzo finale: ${finalprice.tofixed(2)}` 
 })
