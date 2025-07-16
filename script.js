@@ -17,10 +17,10 @@ calculate.addEventListener('click',(e) => {
     finalprice = baseprice * 0.8;
   }
   else if (age > 65) {
-
+    finalprice = baseprice * 0.6;
   }
   else{
     finalprice = baseprice
   }
-  results.innertext = `km percorsi: ${km}, età del passeggero: ${età}, prezzo finale: ${finalprrice}` 
+  results.innertext = `km percorsi: ${km}, età del passeggero: ${età}, prezzo finale: ${finalprrice.tofixed(2)}` 
 })
