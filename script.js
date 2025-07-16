@@ -1,0 +1,15 @@
+const calculate = document.getElementById('calcolatore');
+
+calculate.addEventListener('click',(e) => {
+  e.preventDefault();
+
+
+  const km = document.getElementById(km).Value;
+  const età = document.getElementById(età).Value;
+
+
+
+  const baseprice = 0.21 * km;
+  let finalprice;
+
+})
